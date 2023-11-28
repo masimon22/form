@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Estamos de vuelta!</h1>
+
+    <div class="formulario-container">
+        <h1>Formulario de Contacto</h1>
+
+        <form action="/procesar_formulario" method="post">
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Campo para el email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+             <!-- Campo para el telefono -->
+             <label for="telefono">Telefono:</label>
+             <input type="number" id="telefono" name="telefono" required>
+
+            <!-- Campo para el mensaje -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <!-- Botón de enviar -->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
